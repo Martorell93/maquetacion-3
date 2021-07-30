@@ -1,0 +1,182 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+}
+
+.juego {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.jugadores {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+img {
+    position: absolute;
+}
+
+.jugadores img {
+    right: 20px;
+    position: static;
+}
+
+.jugador1, .jugador2 {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+
+.tablero {
+    order: 2;
+    display: grid;
+    width: 350px;
+    height: 350px;
+    grid-template-areas: "top1 top2 top3"
+                         "mid1 mid2 mid3"
+                         "low1 low2 low3";
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+
+.grid:nth-child(even) {
+    background-color: grey;
+} 
+
+#uno {
+    grid-area: top1;
+}
+
+#dos {
+    grid-area: top2;
+
+}
+
+#tres {
+    grid-area: top3;
+
+}
+
+#uno1 {
+    grid-area: mid1;
+}
+
+#dos1 {
+    grid-area: mid2;
+
+}
+
+#tres1 {
+    grid-area: mid3;
+}
+
+#uno2 {
+    grid-area: low1;
+}
+
+#dos2 {
+    grid-area: low2;
+
+}
+
+#tres2 {
+    grid-area: low3;
+}
+
+.contadores {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px groove rgb(128, 128, 128);
+    margin: 10px;
+}
+
+.contadores div {
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+/* .contador1 div, .contador2 div, .contadorTotal div {
+    border: solid 1px gray;
+    margin: 5px;
+    font-size: 15px;
+} */
+
+#cajas {
+    /* margin: 10px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cuenta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    font-size: 70px !important;
+    color: red;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.resetPartida, .resetTotal {
+    padding: 3px;
+    position: relative;
+    right: 140px;
+}
+
+@media screen and (max-width: 868px) {
+    .contadores {
+        order: 4;
+    }
+    .botones {
+        order: 3;
+    }
+    .resetPartida, .resetTotal {
+        position: static;
+    }
+
+}

@@ -9,7 +9,75 @@
 </head>
 <body>
     <main>
-        
+        <header>
+            <h1>Juego de las 3 en -</h1>
+        </header>
+        <section class="juego">
+            <article class="tablero">
+                <div class="grid" id="uno"></div>
+                <div class="grid" id="dos">
+                    <img class="nuevoPunto" src="circle-ring.png">
+                </div>
+                <div class="grid" id="tres"></div>
+                <div class="grid" id="uno1"></div>
+                <div class="grid" id="dos1">
+                    <img class="nuevoPunto" src="circle-ring.png">
+                </div>
+                <div class="grid" id="tres1"></div>
+                <div class="grid" id="uno2"></div>
+                <div class="grid" id="dos2">
+                    <img class="nuevoPunto" src="close.png">
+                </div>
+                <div class="grid" id="tres2"></div>
+            </article>
+            <article class="jugadores">
+                <div class="jugador1">
+                    <button  id= "j1" type="submit" onfocus="jugador1()">
+                        Jugador 1
+                        <img src="close.png">
+                    </button>
+                </div>
+                <div class="jugador2">
+                    <button id="j2" type="submit" onclick="jugador2()">
+                        Jugador 2
+                        <img src="circle-ring.png">
+                    </button>
+                </div>
+            </article>
+            <article class="contadores">
+                <div clsas="contadorTotal">
+                    <div>
+                        Nº Partidas
+                        <div class="cuenta">2</div>
+                    </div>
+                </div>
+                <div id="cajas">
+                    <div class="contador1">
+                        <div>
+                            Victorias Jugador 1
+                            <div class="cuenta">1</div>
+                        </div>
+                    </div>
+                    <div class="contador2">
+                        <div>
+                            Victorias Jugador 2
+                            <div class="cuenta">0</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="botones">
+            <article class="resetPartida">
+                <button type="summit" onclick="resetPartida()">Reiniciar Partida</button>
+            </article>
+            <article class="resetTotal">
+                <button type="summit" onclick="resetTotal()">Reiniciar Todo</button>
+            </article>
+        </section>
+        <footer class="info">
+
+        </footer>
     </main>
     <script src="tresEnRalla.js"></script>
 </body>

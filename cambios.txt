@@ -1,0 +1,5 @@
+Quitar los bordes laterales del tablero
+
+Cuando sea versión mobile subir los botones arriba, debajo de tablero
+
+Seleccionar punto en el grid, como lo hago?
