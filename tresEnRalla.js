@@ -1,28 +1,35 @@
 //Declaración de funciones 3 en ralla
+let jugador = true;
 
 //Función jugadores
-let newElement = document.createElement("img");
-let posiciones = document.querySelectorAll(".grid div");
+function clicked(id) {
+    let newElement = document.createElement("img");
+    let seccion = document.getElementById(id);
+    newElement.setAttribute("class", "nuevoPunto");
 
-function jugador1() {
-    newElement.setAttribute("src", "close.png");
-    for (let i = 0; i < posiciones.length; i++) {
-        posiciones[i].addEventListener("click", posiciones[i].appendChild(newElement));
+    if (jugador) {
+        newElement.setAttribute("src", "close.png");
+        seccion.appendChild(newElement);
+    }
+    else {
+        newElement.setAttribute("src", "circle-ring.png");
+        seccion.appendChild(newElement);
     }
 }
 
-// function jugador2() {
-//     let sección = document.getElementById();
-//     sección.appendChild(newElement);
-//     newElement.setAttribute("class", "nuevoPunto");
-//     newElement.setAttribute("src", "circle-ring.png");
-//     newElement.setAttribute("ondlbclick", "quitarImagen()")
-// }
+function dobleClicked(id) {
+    let seccion = document.getElementById(id);
+    let quitar = seccion.querySelector(".nuevoPunto");
+    quitar.remove();
+}
 
-// function quitarImagen() {
-//     let eliminar = document.getElementById();
-//     eliminar.remove();
-// }
+function cambioJugador2() {
+    jugador = false;
+}
+
+function cambioJugador1() {
+    jugador = true;
+}
 
 //Funciones reinicio
 function resetPartida() {

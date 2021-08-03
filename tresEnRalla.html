@@ -14,31 +14,31 @@
         </header>
         <section class="juego">
             <article class="tablero">
-                <div class="grid" id="uno"></div>
-                <div class="grid" id="dos">
+                <div class="grid" id="uno" onclick="clicked(id)" ondblclick="dobleClicked(id)"></div>
+                <div class="grid" id="dos" onclick="clicked(id)" ondblclick="dobleClicked(id)">
                     <img class="nuevoPunto" src="circle-ring.png">
                 </div>
-                <div class="grid" id="tres"></div>
-                <div class="grid" id="uno1"></div>
-                <div class="grid" id="dos1">
+                <div class="grid" id="tres" onclick="clicked(id)" ondblclick="dobleClicked(id)"></div>
+                <div class="grid" id="uno1" onclick="clicked(id)" ondblclick="dobleClicked(id)"></div>
+                <div class="grid" id="dos1" onclick="clicked(id)" ondblclick="dobleClicked(id)">
                     <img class="nuevoPunto" src="circle-ring.png">
                 </div>
-                <div class="grid" id="tres1"></div>
-                <div class="grid" id="uno2"></div>
-                <div class="grid" id="dos2">
+                <div class="grid" id="tres1" onclick="clicked(id)" ondblclick="dobleClicked(id)"></div>
+                <div class="grid" id="uno2" onclick="clicked(id)" ondblclick="dobleClicked(id)"></div>
+                <div class="grid" id="dos2" onclick="clicked(id)" ondblclick="dobleClicked(id)">
                     <img class="nuevoPunto" src="close.png">
                 </div>
-                <div class="grid" id="tres2"></div>
+                <div class="grid" id="tres2" onclick="clicked(id)" ondblclick="dobleClicked(id)"></div>
             </article>
             <article class="jugadores">
                 <div class="jugador1">
-                    <button  id= "j1" type="submit" onfocus="jugador1()">
+                    <button  id= "j1" type="submit" onfocus="cambioJugador1()">
                         Jugador 1
                         <img src="close.png">
                     </button>
                 </div>
                 <div class="jugador2">
-                    <button id="j2" type="submit" onclick="jugador2()">
+                    <button id="j2" type="submit" onclick="cambioJugador2()">
                         Jugador 2
                         <img src="circle-ring.png">
                     </button>
